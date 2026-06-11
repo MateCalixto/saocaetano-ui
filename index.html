@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Sistema de Alunos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #efefef;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sistema de Gerenciamento Escolar</h1>
+
+        <div class="grid">
+
+            <a href="gerenciarAlunos.html" class="card">
+                <div class="icon">👥</div>
+                <div class="title">Gerenciador de Alunos</div>
+                <div class="description">
+                    Cadastro, edição e controle geral dos alunos
+                </div>
+            </a>
+
+            <a href="dadosPessoais.html" class="card">
+                <div class="icon">🧾</div>
+                <div class="title">Dados Pessoais dos Alunos</div>
+                <div class="description">
+                    Informações cadastrais e documentos
+                </div>
+            </a>
+
+            <a href="mensalidades.html" class="card">
+                <div class="icon">💰</div>
+                <div class="title">Mensalidades</div>
+                <div class="description">
+                    Valores, datas e histórico de pagamentos
+                </div>
+            </a>
+
+            <a href="fechamentoMensalidade.html" class="card">
+                <div class="icon">📊</div>
+                <div class="title">Fechamento de Mensalidades</div>
+                <div class="description">
+                    Em dia, atrasadas e pendentes
+                </div>
+            </a>
+
+            <a href="situacaoAluno.html" class="card">
+                <div class="icon">⚠️</div>
+                <div class="title">Alunos Pagantes e Pendências</div>
+                <div class="description">
+                    Controle financeiro por aluno
+                </div>
+            </a>
+
+        </div>
+
+        <footer>
+            © 2026 - Sistema Escolar
+        </footer>
+    </div>
+
+</body>
+</html>
