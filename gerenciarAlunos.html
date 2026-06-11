@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Alunos - Escolinha de Futebol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #efefef;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .search {
+            padding: 10px;
+            width: 250px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-add {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        .btn-edit {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .btn-delete {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .status-ok {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-pendente {
+            color: red;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>⚽ Gerenciador de Alunos</h1>
+
+        <div class="top-bar">
+            <input type="text" class="search" placeholder="🔍 Buscar aluno...">
+            <button class="btn btn-add">➕ Novo Aluno</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Categoria</th>
+                    <th>Posição</th>
+                    <th>Mensalidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lucas Silva</td>
+                    <td>10</td>
+                    <td>Sub-11</td>
+                    <td>Atacante</td>
+                    <td class="status-ok">Em dia</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pedro Santos</td>
+                    <td>12</td>
+                    <td>Sub-13</td>
+                    <td>Goleiro</td>
+                    <td class="status-pendente">Pendente</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Matheus Costa</td>
+                    <td>9</td>
+                    <td>Sub-10</td>
+                    <td>Zagueiro</td>
+                    <td class="status-ok">Em dia</td>
+                    <td>
+                        <button class="btn btn-edit">Editar</button>
+                        <button class="btn btn-delete">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            © 2026 - Escolinha de Futebol
+        </footer>
+    </div>
+
+</body>
+</html>

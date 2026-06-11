@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados Pessoais dos Alunos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search {
+            padding: 10px;
+            width: 250px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-success {
+            background: #2ecc71;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: #fff;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #555;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+
+        th {
+            background: #f7f7f7;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f2f2f2;
+        }
+
+        .actions button, .actions a {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Dados Pessoais dos Alunos</h2>
+
+    <div class="top-bar">
+        <input type="text" class="search" placeholder="🔍 Buscar aluno...">
+
+        <!-- Troque o link abaixo pelo arquivo correto -->
+        <a href="criarAluno.html" class="btn btn-success">➕ Novo Aluno</a>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Idade</th>
+                <th>Categoria</th>
+                <th>Responsável</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Lucas Silva</td>
+                <td>10</td>
+                <td>Sub-11</td>
+                <td>João Silva</td>
+                <td>(11) 91234-5678</td>
+                <td>joao@email.com</td>
+                <td class="actions">
+                    <a class="btn btn-primary">Editar</a>
+                    <a class="btn btn-outline">Ver</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pedro Santos</td>
+                <td>12</td>
+                <td>Sub-13</td>
+                <td>Maria Santos</td>
+                <td>(11) 99876-4321</td>
+                <td>maria@email.com</td>
+                <td class="actions">
+                    <a class="btn btn-primary">Editar</a>
+                    <a class="btn btn-outline">Ver</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Matheus Costa</td>
+                <td>9</td>
+                <td>Sub-10</td>
+                <td>Carlos Costa</td>
+                <td>(11) 98765-1122</td>
+                <td>carlos@email.com</td>
+                <td class="actions">
+                    <a class="btn btn-primary">Editar</a>
+                    <a class="btn btn-outline">Ver</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
